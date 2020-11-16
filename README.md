@@ -5,9 +5,9 @@ Nó cho phép bạn đóng gói, triển khai và chạy các ứng dụng một
 * Nó giống như virtual machine, chỉ là tiện dụng hơn, dễ dàng sử dụng hơn và độc lập với hệ điều hành máy chủ chúng ta đang sử dụng.
 * Khi sử dụng môi trường *Vitualization* thì chúng ta cần cài các hệ điều hành cùng cái tool cần thiết để chạy ứng dụng có sẵn, nhưng với docker thì việc đó trở nên đơn giản với việc mình tìm và sử dụng các image (môi trường được dev tạo sẵn rồi upload lên). Sau đó đóng gói trong các *Container* và chạy thôi.
 ## Tại sao Cchusng ta nên sử dụng Docker ?
-* Tính không thay đổi: Một Immutablity image chứa mọi thứ để chạy một ứng dụng bao gồm cả source code của mình.
-* Có thể tái sử dụng dễ dàng.
-* Bạn có thể chia sẻ cho bất cứ ai muốn chạy ứng dụng của mình, chỉ cần sử dụng các image có sẵn mà Bạn đang sử dụng vật là chúng ta đã có một *same enviroment* .
+* **Tính không thay đổi**: Một Immutablity image chứa mọi thứ để chạy một ứng dụng bao gồm cả source code của mình.
+* **Có thể tái sử dụng dễ dàng**.
+* Bạn có thể *chia sẻ* cho bất cứ ai muốn chạy ứng dụng của mình, chỉ cần sử dụng các image có sẵn mà Bạn đang sử dụng vật là chúng ta đã có một *same enviroment* .
     * **Ví dụ**: Bạn của mình đang làm project với Nodejs và nó đang nhờ mình test hộ nó trên máy của mình mà project của nó vẫn chưa up lên host, có nghĩa là vẫn ở local. Tuy nhiên mình chưa bao giờ lập trình với Nodejs nên không biết các tool cần thiết để chạy ứng dụng.
     * Vấn đề đề trên đã được giải quyết với *docker*. Việc mình cần làm chỉ là hỏi  cần cài những tool và version nào . sau đó lên google tìm các image cần thiết để chứa môi trường mình cần chạy và chạy thôi.
 * **Automation**: Tính tự động, khác dễ dàng đễ start server chỉ thông qua vài dòng lệnh trên terminal
